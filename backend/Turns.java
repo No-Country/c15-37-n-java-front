@@ -1,4 +1,4 @@
-public class Turns {
+public class Turns{
     private String nombre;
     private String numTel;
     private String email;
