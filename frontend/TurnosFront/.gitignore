@@ -1,47 +1,24 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-backend/*
-
-HELP.md
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
-
 # Compiled output
 /dist
 /tmp
 /out-tsc
 /bazel-out
 
-### STS ###
-.apt_generated
-
-
 # Node
-**/node_modules
-frontend/TurnosFront/node_modules
+/node_modules
 npm-debug.log
 yarn-error.log
 
 # IDEs and editors
 .idea/
 .project
-
 .classpath
 .c9/
 *.launch
 .settings/
 *.sublime-workspace
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
 
 # Visual Studio Code
 .vscode/*
@@ -51,22 +28,6 @@ bin/
 !.vscode/extensions.json
 .history/*
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
 # Miscellaneous
 /.angular/cache
 .sass-cache/
@@ -75,9 +36,6 @@ out/
 /libpeerconnection.log
 testem.log
 /typings
-
-### VS Code ###
-.vscode/
 
 # System files
 .DS_Store
