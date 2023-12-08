@@ -62,4 +62,31 @@ public class ClienteService {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * La función guardar guarda un objeto ClienteModel en el clienteRepository.
+     * 
+     * @param clienteModel El parámetro "clienteModel" es un objeto de tipo
+     *                     ClienteModel.
+     */
+    public void save(ClienteModel clienteModel) {
+
+        clienteRepository.save(clienteModel);
+    }
+
+    /**
+     * La función delete borra un objeto ClienteModel en el clienteRepository.
+     * 
+     * @param clienteModel El parámetro "clienteModel" es un objeto de tipo
+     *                     ClienteModel.
+     */
+    public boolean delete(ClienteModel clienteModel) {
+        try {
+            clienteRepository.delete(clienteModel);
+        } catch (Exception e) {
+            return false;
+        }
+
+        return true;
+    }
+
 }
