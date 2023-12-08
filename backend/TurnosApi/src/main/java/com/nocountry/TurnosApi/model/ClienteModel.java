@@ -1,13 +1,18 @@
 package com.nocountry.TurnosApi.model;
 
+import jakarta.persistence.*;
+/*
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+*/
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.NoArgsConstructor;
 
 /**
  * La clase es una clase de entidad Java que representa un cliente con
@@ -18,6 +23,8 @@ import lombok.Setter;
 @Setter
 @Data
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "cliente")
 public class ClienteModel {
     @Id
