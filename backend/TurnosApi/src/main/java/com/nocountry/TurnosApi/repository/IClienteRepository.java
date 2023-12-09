@@ -13,5 +13,4 @@ import com.nocountry.TurnosApi.model.ClienteModel;
 @Repository
 public interface IClienteRepository extends JpaRepository<ClienteModel, Long> {
     Optional<ClienteModel> findByEmail(String email);
-    /* Me parece que buscar por id sería más recomendable */
 }
