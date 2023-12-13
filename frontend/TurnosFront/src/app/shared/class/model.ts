@@ -1,8 +1,5 @@
 import { retry } from "rxjs";
-
-interface JsonData {
-  [key: string]: any; 
-}
+import { JsonData } from "./IJsonData";
 
 export class Model {
   prev: JsonData;

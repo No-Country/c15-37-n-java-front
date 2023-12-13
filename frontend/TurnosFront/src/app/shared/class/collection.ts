@@ -1,18 +1,33 @@
+import { CONNECTIONS } from 'src/app/constants';
+import { HttpController } from './http-controler';
 import { Model } from './model';
 
 export class Collection<T> extends Array<T> {
   model: any;
-  parentAtt: string;
-  parentAttValue: string;
-  static controler:any;
+  //parentAtt: string;
+  //parentAttValue: string;
+  static controller: HttpController;
 
-  constructor(T, private _url:string="") {
+  constructor(T:any, private _url:string="") {
     super();
     this.model = T;
+    if(!Collection.controller){
+      Collection.controller = 
+        new HttpController(CONNECTIONS.BASE_PATH);
+    }
+
   }
 
-  public fetch():void{
-    
+  public async fetch():Promise<any>{
+    return Collection.controller.get(this._url)
+      .then((response) => {
+        //console.log(response); // Manejamos la respuesta aquí
+        this.parse(response, Collection.controller);
+        //ctrl.loaded.emit(c);
+      })
+      .catch((error) => {
+        console.error(error); // Manejamos el error aquí
+      });
   }
 
   public sinc():void{
@@ -45,4 +60,5 @@ export class Collection<T> extends Array<T> {
       this.push(modelInstance);
     });
   }
+
 }

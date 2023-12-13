@@ -1,0 +1,45 @@
+<form id="contact-form" [formGroup]="formulario" onsubmit="return false;">
+    <label for="nombre" class="col-form-label">Nombre:</label>
+    <input type="text" class="form-control" id="nombre" formControlName="nombre" placeholder="">
+    <div *ngIf="nombre?.errors  && nombre?.touched && nombre?.hasError('required')">
+        <p class="error-message bg-danger ">
+            El nombre es requerido
+        </p>
+    </div>
+
+    <label for="apellido" class="col-form-label">Apellido:</label>
+    <input type="text" class="form-control" id="apellido" formControlName="apellido" placeholder="">
+    <div *ngIf="apellido?.errors  && apellido?.touched && apellido?.hasError('required')">
+        <p class="error-message bg-danger ">
+            El apellido es requerido
+        </p>
+    </div>
+    <label for="email" class="col-form-label">E-mail:</label>
+    <input type="text" class="form-control" id="email" formControlName="email" placeholder="">
+    <div *ngIf="email?.errors  && email?.touched ">
+        <p *ngIf="email?.hasError('required')" class="error-message bg-danger ">
+            Se necesita un email
+        </p>
+        <p *ngIf="email?.hasError('email')" class="error-message bg-danger ">
+            Se necesita un email valido.
+        </p>
+    </div>
+
+    <label for="telefono" class="col-form-label">Telefono:</label>
+    <input type="text" class="form-control" id="telefono" formControlName="telefono" placeholder="">
+    <div *ngIf="telefono?.errors  && telefono?.touched && telefono?.hasError('required')">
+        <p class="error-message bg-danger ">
+            El telefono es requerido
+        </p>
+    </div>
+
+    <label for="mensaje" class="col-form-label">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" formControlName="mensaje"></textarea>
+    <div *ngIf="mensaje?.errors  && mensaje?.touched && mensaje?.hasError('required')">
+        <p class="error-message bg-danger ">
+            Debes dejar un mensaje
+        </p>
+    </div>
+
+    <button type="submit" id="enviar" name="enviar" (click)="saveData()" [disabled]="!formulario.valid">Enviar</button>
+</form>
