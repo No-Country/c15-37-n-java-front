@@ -1,0 +1,22 @@
+<header>
+    <div class="headcontent">
+        <div class="row">
+            <div class="col">
+                <picture>
+                    <img src="assets/images/braz 2.svg" alt="">
+                </picture>
+            </div>
+            <div class="col">
+                <nav class="navbar">
+
+                    <app-link-bar></app-link-bar>
+                    <app-btn-turnos [texto]='textoTurnos'></app-btn-turnos>
+                    <button (click)="goLogin()" class="btn">{{textoLogin}}</button>
+
+
+                </nav>
+            </div>
+        </div>
+
+    </div>
+</header>

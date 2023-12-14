@@ -1,1 +1,21 @@
-<p>customer-dashboard works!</p>
+<div>
+    <div class="row">
+        <div class="col"><app-servicio-tipo [campo]="'campo1'" [src]="''" [text]="'Corte'"
+                [turno]="turno"></app-servicio-tipo></div>
+        <div class="col"><app-servicio-tipo [campo]="'campo2'" [src]="''" [text]="'Afeitado'"
+                [turno]="turno"></app-servicio-tipo></div>
+        <div class="col"><app-servicio-tipo [campo]="'campo3'" [src]="''" [text]="'Color'"
+                [turno]="turno"></app-servicio-tipo></div>
+        <div class="col"><app-servicio-tipo [campo]="'campo4'" [src]="''" [text]="'Peinado'"
+                [turno]="turno"></app-servicio-tipo></div>
+    </div>
+
+</div>
+<div>
+    <app-calendario></app-calendario>
+</div>
+<div><app-time-selector></app-time-selector></div>
+<div>
+    <button class="btn">Volver</button>
+    <button class="btn">Continuar</button>
+</div>

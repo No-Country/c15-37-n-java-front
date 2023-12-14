@@ -1,0 +1,35 @@
+<form id="contact-form" [formGroup]="formulario" onsubmit="return false;">
+    <label for="nombre" class="col-form-label">Nombre:</label>
+    <input type="text" class="form-control" id="nombre" formControlName="nombre" placeholder="">
+    <div *ngIf="nombre?.errors  && nombre?.touched && nombre?.hasError('required')">
+        <p class="error-message bg-danger ">
+            El nombre es requerido
+        </p>
+    </div>
+
+    <label for="apellido" class="col-form-label">Apellido:</label>
+    <input type="text" class="form-control" id="apellido" formControlName="apellido" placeholder="">
+    <div *ngIf="apellido?.errors  && apellido?.touched && apellido?.hasError('required')">
+        <p class="error-message bg-danger ">
+            El apellido es requerido
+        </p>
+    </div>
+    <label for="email" class="col-form-label">E-mail:</label>
+    <input type="text" class="form-control" id="email" formControlName="email" placeholder="">
+    <div *ngIf="email?.errors  && email?.touched ">
+        <p *ngIf="email?.hasError('required')" class="error-message bg-danger ">
+            Se necesita un email
+        </p>
+        <p *ngIf="email?.hasError('email')" class="error-message bg-danger ">
+            Se necesita un email valido.
+        </p>
+    </div>
+    <label for="password" class="col-form-label">Password:</label>
+    <input type="password" class="form-control" id="password" formControlName="password" placeholder="">
+
+    <button class="btn" type="submit" id="enviar" name="enviar" (click)="saveData()"
+        [disabled]="!formulario.valid">REGISTRARME</button>
+</form>
+<div>¿Ya tiene cuenta?
+    <a (click)="doLogin()">Inicia Sesión</a>
+</div>

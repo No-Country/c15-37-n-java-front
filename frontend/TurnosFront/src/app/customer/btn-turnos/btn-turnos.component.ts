@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { CommandService } from '../command-service.service';
 
 @Component({
   selector: 'app-btn-turnos',
@@ -9,7 +10,11 @@ export class BtnTurnosComponent {
   @Input()
   texto: string;
 
-  constructor() {
+  constructor(private command:CommandService) {
     this.texto= "";
+  }
+
+  public doClick(){
+    this.command.command = "turnos";
   }
 }

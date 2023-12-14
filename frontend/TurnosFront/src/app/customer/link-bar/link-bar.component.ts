@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Collection } from 'src/app/shared/class/collection';
 import { TextLink } from './text-link';
+import { CommandService } from '../command-service.service';
 
 const lnks = [
   {
@@ -23,10 +24,15 @@ const lnks = [
   styleUrls: ['./link-bar.component.scss']
 })
 export class LinkBarComponent {
+
   links: Collection<TextLink>;
 
-  constructor(){
+  constructor(private command:CommandService){
     this.links = new Collection(TextLink);
     this.links.parse(lnks);
   }
+
+  doClick() {
+      this.command.command = "landing";
+  } 
 }

@@ -16,3 +16,9 @@ export const CONNECTIONS = {
   MAX_RETRIES : 4 // RETRIES TO CONNECT
 } as const;
 
+export const TEXTOS = {
+    BTN_LOGIN: "Login",
+    BTN_AGENDA_LARGO: "Agendar turno",
+    BTN_AGENDA_CORTO: "Turno",
+};
+

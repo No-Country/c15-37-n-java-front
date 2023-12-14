@@ -1,0 +1,13 @@
+<form id="loginform" [formGroup]="loguinform" onsubmit="return false;">
+
+    <input type="text" class="form-control" id="user" formControlName="user" placeholder="">
+    <label for="user" class="col-form-label">Usuario:</label>
+
+    <input type="password" class="form-control" id="password" formControlName="password" placeholder="">
+    <label for="password" class="col-form-label">Password:</label>
+
+    <button type="submit" class="btn btn-primary" (click)="onEnviar($event)" [disabled]="!loguinform.valid">INICIAR
+        SESIÓN</button>
+</form>
+<p>¿No tiene cuenta? <a (click)="doRegister()">Regístrese</a>
+</p>

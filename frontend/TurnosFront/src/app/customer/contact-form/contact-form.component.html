@@ -34,12 +34,14 @@
     </div>
 
     <label for="mensaje" class="col-form-label">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" formControlName="mensaje"></textarea>
+    <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje"
+        formControlName="mensaje"></textarea>
     <div *ngIf="mensaje?.errors  && mensaje?.touched && mensaje?.hasError('required')">
         <p class="error-message bg-danger ">
             Debes dejar un mensaje
         </p>
     </div>
 
-    <button type="submit" id="enviar" name="enviar" (click)="saveData()" [disabled]="!formulario.valid">Enviar</button>
+    <button class="btn" type="submit" id="enviar" name="enviar" (click)="saveData()"
+        [disabled]="!formulario.valid">Enviar</button>
 </form>

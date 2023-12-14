@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Model } from 'src/app/shared/class/model';
 
 @Component({
   selector: 'app-customer-dashboard',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./customer-dashboard.component.scss']
 })
 export class CustomerDashboardComponent {
+
+  turno: Model = new Model({});
 
 }
