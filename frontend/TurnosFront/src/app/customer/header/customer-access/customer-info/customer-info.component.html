@@ -1,0 +1,10 @@
+<h3>{{data.user.nombre}} {{data.user.apellido}}</h3>
+<p>{{data.user.email}}</p>
+<p>Mis turnos pendientes</p>
+
+<p *ngFor="let t as Turno of data.user.turnos">
+    {{t.fecha}}
+</p>
+
+
+<button class="btn" (click)="cerrarDialog()">Volver</button>

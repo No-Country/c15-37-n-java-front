@@ -1,0 +1,20 @@
+.not-selected{
+    color: #000;
+}
+
+.selected{
+    background-color: #000;
+    color: aliceblue;
+}
+
+.horario-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Espaciado entre las horas */
+}
+
+.hora-item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}

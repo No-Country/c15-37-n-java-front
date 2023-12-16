@@ -1,0 +1,6 @@
+<button *ngIf="!isLoged()" (click)="goLogin()" class="btn">
+    {{textoLogin}}
+</button>
+<div *ngIf="isLoged()">
+    <a (click)="showDialog()">Hola! {{user.nombre}}</a>
+</div>

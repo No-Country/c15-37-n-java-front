@@ -6,8 +6,8 @@ import { LinkBarComponent } from './link-bar/link-bar.component';
 import { IconBarComponent } from './icon-bar/icon-bar.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ServicioTipoComponent } from './servicio-tipo/servicio-tipo.component';
-import { CalendarioComponent } from './calendario/calendario.component';
+import { ServicioTipoComponent } from './customer-dashboard/servicio-tipo/servicio-tipo.component';
+import { CalendarioComponent } from './customer-dashboard/calendario/calendario.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -16,7 +16,12 @@ import { RegistroComponent } from './registro/registro.component';
 import { PageSwitcherComponent } from './page-switcher/page-switcher.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { TimeSelectorComponent } from './time-selector/time-selector.component';
+import { TimeSelectorComponent } from './customer-dashboard/time-selector/time-selector.component';
+import { ConfirmDialogComponent } from './customer-dashboard/confirm-dialog/confirm-dialog.component';
+import { ThanksDialogComponent } from './customer-dashboard/thanks-dialog/thanks-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { CustomerAccessComponent } from './header/customer-access/customer-access.component';
+import { CustomerInfoComponent } from './header/customer-access/customer-info/customer-info.component';
 
 
 @NgModule({
@@ -35,6 +40,10 @@ import { TimeSelectorComponent } from './time-selector/time-selector.component';
     HeaderComponent,
     FooterComponent,
     TimeSelectorComponent,
+    ConfirmDialogComponent,
+    ThanksDialogComponent,
+    CustomerAccessComponent,
+    CustomerInfoComponent,
   ],
   imports: [
     CommonModule,
@@ -42,10 +51,8 @@ import { TimeSelectorComponent } from './time-selector/time-selector.component';
     ReactiveFormsModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatDialogModule
   ],
-
-  
-
   exports:[PageSwitcherComponent]
   
 })

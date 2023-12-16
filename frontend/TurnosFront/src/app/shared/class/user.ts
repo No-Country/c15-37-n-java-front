@@ -1,11 +1,14 @@
+import { Collection } from "./collection";
 import { Model } from "./model";
+import { Turno } from "./turno";
 
 export class User extends Model {
+  _turnos:Collection<Turno>;
+  
   constructor(attr: {}, idAttr: string = '') {
     super(attr);
-    /* id: number,
-     nombre: string,
-     token: string*/
+    
+    this._turnos = new Collection(Turno);
   }
 
   public get id(): number {
@@ -24,6 +27,22 @@ export class User extends Model {
     this.setValue('nombre', value);
   }
 
+  public get apellido():string{
+    return this.getValue("apellido");
+  }
+
+  public set apellido(a:string){
+    this.setValue("apellido",a);
+  }
+
+  public get email():string{
+    return this.getValue("email");
+  }
+
+  public set email(e:string){
+    this.setValue("email",e)
+  }
+
   public get token(): string {
     return this.getValue('token');
   }
@@ -39,4 +58,8 @@ export class User extends Model {
   public set password(value: string) {
     this.setValue('password', value);
   }
+
+  public get turnos():Collection<Turno>{
+    return this._turnos;
+  }  
 }

@@ -14,6 +14,15 @@
             El apellido es requerido
         </p>
     </div>
+
+    <label for="telefono" class="col-form-label">Apellido:</label>
+    <input type="text" class="form-control" id="telefono" formControlName="telefono" placeholder="">
+    <div *ngIf="telefono?.errors  && telefono?.touched && telefono?.hasError('required')">
+        <p class="error-message bg-danger ">
+            El telefono es requerido
+        </p>
+    </div>
+
     <label for="email" class="col-form-label">E-mail:</label>
     <input type="text" class="form-control" id="email" formControlName="email" placeholder="">
     <div *ngIf="email?.errors  && email?.touched ">
@@ -26,7 +35,11 @@
     </div>
     <label for="password" class="col-form-label">Password:</label>
     <input type="password" class="form-control" id="password" formControlName="password" placeholder="">
-
+    <div *ngIf="password?.errors  && password?.touched && password?.hasError('required')">
+        <p class="error-message bg-danger ">
+            El el password es requerido
+        </p>
+    </div>
     <button class="btn" type="submit" id="enviar" name="enviar" (click)="saveData()"
         [disabled]="!formulario.valid">REGISTRARME</button>
 </form>

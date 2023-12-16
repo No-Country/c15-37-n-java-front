@@ -1,21 +1,21 @@
 <div>
     <div class="row">
-        <div class="col"><app-servicio-tipo [campo]="'campo1'" [src]="''" [text]="'Corte'"
+        <div class="col"><app-servicio-tipo [campo]="'corte'" [src]="''" [text]="'Corte'"
                 [turno]="turno"></app-servicio-tipo></div>
-        <div class="col"><app-servicio-tipo [campo]="'campo2'" [src]="''" [text]="'Afeitado'"
+        <div class="col"><app-servicio-tipo [campo]="'afeitado'" [src]="''" [text]="'Afeitado'"
                 [turno]="turno"></app-servicio-tipo></div>
-        <div class="col"><app-servicio-tipo [campo]="'campo3'" [src]="''" [text]="'Color'"
+        <div class="col"><app-servicio-tipo [campo]="'color'" [src]="''" [text]="'Color'"
                 [turno]="turno"></app-servicio-tipo></div>
-        <div class="col"><app-servicio-tipo [campo]="'campo4'" [src]="''" [text]="'Peinado'"
+        <div class="col"><app-servicio-tipo [campo]="'peinado'" [src]="''" [text]="'Peinado'"
                 [turno]="turno"></app-servicio-tipo></div>
     </div>
 
 </div>
 <div>
-    <app-calendario></app-calendario>
+    <app-calendario [turno]="turno"></app-calendario>
 </div>
-<div><app-time-selector></app-time-selector></div>
+<div><app-time-selector [turno]="turno"></app-time-selector></div>
 <div>
-    <button class="btn">Volver</button>
-    <button class="btn">Continuar</button>
+    <button class="btn" (click)="atras()">Volver</button>
+    <button class="btn" (click)="siguiente()">Continuar</button>
 </div>
