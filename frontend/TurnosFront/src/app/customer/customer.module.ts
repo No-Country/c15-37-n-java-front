@@ -22,6 +22,8 @@ import { ThanksDialogComponent } from './customer-dashboard/thanks-dialog/thanks
 import { MatDialogModule } from '@angular/material/dialog';
 import { CustomerAccessComponent } from './header/customer-access/customer-access.component';
 import { CustomerInfoComponent } from './header/customer-access/customer-info/customer-info.component';
+import { LogoutDialogComponent } from './header/customer-access/customer-info/logout-dialog/logout-dialog.component';
+import { DeleteConfirmComponent } from './header/customer-access/customer-info/delete-confirm/delete-confirm.component';
 
 
 @NgModule({
@@ -44,6 +46,8 @@ import { CustomerInfoComponent } from './header/customer-access/customer-info/cu
     ThanksDialogComponent,
     CustomerAccessComponent,
     CustomerInfoComponent,
+    LogoutDialogComponent,
+    DeleteConfirmComponent,
   ],
   imports: [
     CommonModule,

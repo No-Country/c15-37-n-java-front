@@ -1,4 +1,19 @@
-<h1>{{ data.user.nombre }}</h1>
-<p>{{ data.turno.hora }}</p>
-<button mat-button (click)="cerrarDialog()">Modificar</button>
-<button mat-button color="primary" (click)="aceptarDialog()">Aceptar</button>
+<div>
+    <div>agendar turno</div>
+    <div>resumen de Servicio</div>
+    <div>Cliente</div>
+    <div>{{ data.user.nombre }} {{data.user.apellido}}</div>
+    <div>Servicio elegido</div>
+    <div>
+        <div *ngFor="let s of data.turno.serviceList">
+            {{s}}
+        </div>
+    </div>
+    <div>FECHA ELEGIDA</div>
+    <div>{{formatFecha(data.turno.fecha)}}</div>
+    <div>{{formatHora(data.turno.hora)}}</div>
+    <div>
+        <button mat-button (click)="cerrarDialog()">Modificar</button>
+        <button mat-button color="primary" (click)="aceptarDialog()">Aceptar</button>
+    </div>
+</div>

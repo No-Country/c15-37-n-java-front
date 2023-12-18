@@ -1,3 +1,7 @@
-<a (click)="doClick()" *ngFor="let lnk of links" href="{{lnk.url}}">
-    {{lnk.text}}
-</a>
+<ul>
+    <li *ngFor="let lnk of links">
+        <a (click)="doClick()" href="{{lnk.url}}">
+            {{lnk.text}}
+        </a>
+    </li>
+</ul>

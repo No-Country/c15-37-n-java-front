@@ -1,5 +1,5 @@
 <header>
-    <div class="headcontent">
+    <div class="header-nav">
         <div class="row">
             <div class="col">
                 <picture>
@@ -7,13 +7,14 @@
                 </picture>
             </div>
             <div class="col">
-                <nav class="navbar">
-
-                    <app-link-bar></app-link-bar>
-                    <app-btn-turnos [texto]='textoTurnos'></app-btn-turnos>
-                    <app-customer-access></app-customer-access>
-
-
+                <nav class="listac">
+                    <div class="links">
+                        <app-link-bar></app-link-bar>
+                    </div>
+                    <div class="movi">
+                        <app-btn-turnos [texto]='textoTurnos' [cssClass]="'button-unfilled'"></app-btn-turnos>
+                        <app-customer-access></app-customer-access>
+                    </div>
                 </nav>
             </div>
         </div>

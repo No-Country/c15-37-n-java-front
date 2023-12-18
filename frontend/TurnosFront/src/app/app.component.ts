@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CustomerDashboardComponent } from './customer/customer-dashboard/customer-dashboard.component';
+import { PersistentService } from './shared/services/persistent.service';
+import { User } from './shared/class/user';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +12,16 @@ import { CustomerDashboardComponent } from './customer/customer-dashboard/custom
 export class AppComponent {
   
   title = 'TurnosFront';
+
+  constructor(private persistencia:PersistentService){
+
+  }
+
+  public isAdmin(){
+    if(this.persistencia.exist("user")){
+      let u = this.persistencia.get("user") as User;
+      return u.isAdmin();
+    }
+    return false;
+  }
 }

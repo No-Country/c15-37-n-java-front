@@ -1,21 +1,23 @@
-<div>
-    <div class="row">
-        <div class="col"><app-servicio-tipo [campo]="'corte'" [src]="''" [text]="'Corte'"
-                [turno]="turno"></app-servicio-tipo></div>
-        <div class="col"><app-servicio-tipo [campo]="'afeitado'" [src]="''" [text]="'Afeitado'"
-                [turno]="turno"></app-servicio-tipo></div>
-        <div class="col"><app-servicio-tipo [campo]="'color'" [src]="''" [text]="'Color'"
-                [turno]="turno"></app-servicio-tipo></div>
-        <div class="col"><app-servicio-tipo [campo]="'peinado'" [src]="''" [text]="'Peinado'"
-                [turno]="turno"></app-servicio-tipo></div>
-    </div>
+<section>
+    <div class="justify-content-center">
+        <div class="row ">
+            <div class="col"><app-servicio-tipo [campo]="'corte'" [src]="'assets/images/corte.svg'" [text]="'Corte'"
+                    [turno]="turno"></app-servicio-tipo></div>
+            <div class="col"><app-servicio-tipo [campo]="'afeitado'" [src]="'assets/images/afeitado.svg'"
+                    [text]="'Afeitado'" [turno]="turno"></app-servicio-tipo></div>
+            <div class="col"><app-servicio-tipo [campo]="'color'" [src]="'assets/images/color.png'" [text]="'Color'"
+                    [turno]="turno"></app-servicio-tipo></div>
+            <div class="col"><app-servicio-tipo [campo]="'peinado'" [src]="'assets/images/peinado.svg'"
+                    [text]="'Peinado'" [turno]="turno"></app-servicio-tipo></div>
+        </div>
 
-</div>
-<div>
-    <app-calendario [turno]="turno"></app-calendario>
-</div>
-<div><app-time-selector [turno]="turno"></app-time-selector></div>
-<div>
-    <button class="btn" (click)="atras()">Volver</button>
-    <button class="btn" (click)="siguiente()">Continuar</button>
-</div>
+    </div>
+    <div>
+        <app-calendario [turno]="turno"></app-calendario>
+    </div>
+    <div><app-time-selector [turno]="turno"></app-time-selector></div>
+    <div>
+        <button class="btn" (click)="atras()">Volver</button>
+        <button class="btn" (click)="siguiente()">Continuar</button>
+    </div>
+</section>

@@ -1,5 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { format } from 'date-fns';
+import { es } from 'date-fns/locale';
 
 @Component({
   selector: 'app-confirm-dialog',
@@ -18,11 +20,19 @@ export class ConfirmDialogComponent {
 
   aceptarDialog(): void {
     // Realizar la acción deseada al presionar "Aceptar"
-    console.log('Botón Aceptar presionado');
+    //console.log('Botón Aceptar presionado');
     // Puedes realizar acciones adicionales aquí, como llamar a un servicio, actualizar datos, etc.
     // ...
 
     // Cierra el diálogo después de realizar la acción
     this.dialogRef.close(true);
+  }
+
+  formatFecha(f:Date):string{
+    return format(f,"d 'de' MMMM 'de' yyyy",{locale:es});
+  }
+  
+  formatHora(h:Date):string{
+    return format(h,"HH:mm");
   }
 }

@@ -1,0 +1,32 @@
+<h1>CLIENTES</h1>
+<div>
+    <form id="buscar" [formGroup]="buscar" onsubmit="return false;">
+        <div class="row">
+            <div class="col"><input type="text" class="form-control" id="filtro" formControlName="filtro"
+                    placeholder=""></div>
+            <div class="col">orden:</div>
+            <div class="col">ascendente</div>
+            <div class="col">descendente</div>
+        </div>
+    </form>
+</div>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>nombre</th>
+                <th>Apellido</th>
+                <th>email</th>
+
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>valor</td>
+                <td>valor</td>
+                <td>valor</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

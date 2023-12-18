@@ -1,3 +1,10 @@
+.service-type {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  margin: auto;
+}
+
 .unselected {
   color: black;
 }

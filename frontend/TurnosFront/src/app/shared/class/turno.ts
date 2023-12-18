@@ -39,4 +39,25 @@ export class Turno extends Model{
   get peinado():boolean{
     return this.getValue("peinado");
   }
+
+  get serviceList():any{
+    let services=[];
+    if(this.corte){
+      services.push("Corte");
+    }
+
+    if(this.afeitado){
+      services.push("Afeitado");
+    }
+    
+    if(this.color){
+      services.push("Color");
+    }
+
+    if(this.peinado){
+      services.push("Peinado");
+    }
+
+    return services;
+  }
 }

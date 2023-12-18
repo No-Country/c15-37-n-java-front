@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-3">
+        <a (click)="cambiar('turnos')">turnos</a><br>
+        <a (click)="cambiar('clientes')">Clientes</a><br>
+        <a (click)="salir()">salir</a><br>
+    </div>
+    <div class="col">
+        <app-turnos-panel *ngIf="panel == 'turnos'"></app-turnos-panel>
+        <app-clientes-panel *ngIf="panel == 'clientes'"></app-clientes-panel>
+    </div>
+</div>

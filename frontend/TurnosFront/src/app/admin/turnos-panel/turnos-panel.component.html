@@ -1,0 +1,39 @@
+<h1>GESTIÓN DE TURNOS</h1>
+<div>
+    <div class="row">
+        <div class="col">
+            <form id="buscar" [formGroup]="buscar" onsubmit="return false;">
+                <input type="text" class="form-control" id="filtro" formControlName="filtro" placeholder="">
+            </form>
+        </div>
+        <div class="col">Filtros:</div>
+        <div class="col">Todos</div>
+        <div class="col">listos</div>
+        <div class="col">pendientes</div>
+        <div class="col">...</div>
+    </div>
+
+</div>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Servicio</th>
+                <th>Estado</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>valor</td>
+                <td>valor</td>
+                <td>valor</td>
+                <td>valor</td>
+                <td>valor</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

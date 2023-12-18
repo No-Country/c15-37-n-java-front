@@ -32,6 +32,8 @@ export class TimeSelectorComponent {
     horaSeleccionada.setHours(parseInt(hours, 10));
     horaSeleccionada.setMinutes(parseInt(minutes, 10));
     
+    //console.log(format(horaSeleccionada,'HH:mm'));
+    
     
     this.turno?.setValue("hora",horaSeleccionada);
   }

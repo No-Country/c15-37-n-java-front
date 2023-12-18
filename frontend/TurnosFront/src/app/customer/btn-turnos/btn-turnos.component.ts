@@ -9,6 +9,7 @@ import { CommandService } from '../command-service.service';
 export class BtnTurnosComponent {
   @Input()
   texto: string;
+  @Input() cssClass:string | undefined ;
 
   constructor(private command:CommandService) {
     this.texto= "";

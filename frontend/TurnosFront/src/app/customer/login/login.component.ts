@@ -17,8 +17,6 @@ export class LoginComponent {
 
   constructor(private formBuilder: FormBuilder,
     private command:CommandService,
-
-  
     private persistence:PersistentService){
     this.loguinform = this.formBuilder.group({
       user: ["a@a.a", [Validators.required, Validators.email]],
@@ -33,7 +31,8 @@ export class LoginComponent {
         {
           nombre: "juan",
           apellido: "perez",
-          email: this.loguinform.get("user")?.value
+          email: this.loguinform.get("user")?.value,
+          admin: false
         }
       ));
 

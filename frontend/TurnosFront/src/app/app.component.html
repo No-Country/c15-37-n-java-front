@@ -1,1 +1,2 @@
-<app-page-switcher></app-page-switcher>
+<app-page-switcher *ngIf="!isAdmin()"></app-page-switcher>
+<app-main-panel *ngIf="isAdmin()"></app-main-panel>

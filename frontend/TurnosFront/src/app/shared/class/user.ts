@@ -61,5 +61,10 @@ export class User extends Model {
 
   public get turnos():Collection<Turno>{
     return this._turnos;
-  }  
+  } 
+  
+  public isAdmin():boolean{
+    return this.getValue("admin");
+
+  }
 }
