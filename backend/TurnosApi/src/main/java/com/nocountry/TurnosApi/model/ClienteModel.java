@@ -43,4 +43,8 @@ public class ClienteModel {
 
     private boolean admin;
 
+    public Turn getTurn() {   // Aquí el método añadidooooa
+        return null;
+    }
+
 }

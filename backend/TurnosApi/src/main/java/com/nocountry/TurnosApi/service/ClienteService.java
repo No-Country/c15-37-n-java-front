@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Service;
 
 import com.nocountry.TurnosApi.model.ClienteModel;
@@ -62,4 +64,8 @@ public class ClienteService {
                 .collect(Collectors.toList());
     }
 
+    @Query("SELECT c FROM ClienteModel c WHERE c.email = :email")               // En este método pedí ayuda a la IA porque no sabía como conectarlo con la base da datos para hacer el get en específico del "email" u.u
+    public Optional<ClienteModel> findByEmail(@Param("email") String email) {
+        return clienteRepository.findByEmail(email);
+    } 
 }

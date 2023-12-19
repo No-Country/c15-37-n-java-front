@@ -18,25 +18,23 @@ import lombok.RequiredArgsConstructor;
  * devuelve una lista de objetos ClienteModel.
  */
 
-@RestController
-@RequestMapping("/clientes")
-@RequiredArgsConstructor
-public class ClienteController {                                                                                                    
+    @RestController
+    @RequestMapping("/clientes")
+    @RequiredArgsConstructor
+    public class ClienteController {                                                                                                    
 
-    private final ClienteService clienteService;
+        private final ClienteService clienteService;
 
-    /**
-     * La función devuelve una lista de objetos ClienteModel como ResponseEntity.
-     * 
-     * @return El método devuelve un objeto ResponseEntity que contiene una lista de
-     *         objetos
-     *         ClienteModel.
-     */
-    @GetMapping()
-    public ResponseEntity<List<ClienteModel>> clientes() {
-        return ResponseEntity.ok(
-                clienteService.getClientes());
-
+        /**
+         * La función devuelve una lista de objetos ClienteModel como ResponseEntity.
+         * 
+         * @return El método devuelve un objeto ResponseEntity que contiene una lista de
+         *         objetos
+         *         ClienteModel.
+         */
+        @GetMapping()
+        public ResponseEntity<List<ClienteModel>> clientes() {
+            return ResponseEntity.ok(
+                    clienteService.getClientes());
+        }
     }
-
-}
