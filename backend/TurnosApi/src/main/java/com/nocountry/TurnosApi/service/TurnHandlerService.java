@@ -24,4 +24,8 @@ public class TurnHandlerService {
     public List<Turn> getAllTurns() {
         return turnQueue.stream().collect(Collectors.toList());
     }
+
+    public boolean deleteTurn(Turn turn) {
+        return turnQueue.remove(turn);
+    }
 }

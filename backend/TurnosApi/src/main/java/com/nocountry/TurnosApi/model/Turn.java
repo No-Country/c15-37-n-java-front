@@ -16,4 +16,3 @@ public class Turn {
         this.description = description;
     }
 }
-

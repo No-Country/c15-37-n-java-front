@@ -39,4 +39,10 @@ public class TurnController {
         Turn nextTurn = turnHandlerService.getNextTurn();
         return nextTurn != null ? ResponseEntity.ok(nextTurn) : ResponseEntity.noContent().build();
     }
+
+    @DeleteMapping
+    public ResponseEntity<Turn> deleteTurn(@RequestBody Turn turn) {
+        boolean deleted = turnHandlerService.deleteTurn(turn);
+        return deleted ? ResponseEntity.ok(turn) : ResponseEntity.notFound().build();
+    }
 }
