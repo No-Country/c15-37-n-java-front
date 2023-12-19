@@ -1,6 +1,5 @@
 package com.nocountry.TurnosApi.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -8,21 +7,24 @@ import org.springframework.web.bind.annotation.*;
 import com.nocountry.TurnosApi.model.Turn;
 import com.nocountry.TurnosApi.service.TurnHandlerService;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.List;
 
 @RestController
 @RequestMapping("/turns")
+@Slf4j // Anotación Lombok para crear el logger
 public class TurnController {
 
     private final TurnHandlerService turnHandlerService;
 
-    @Autowired
     public TurnController(TurnHandlerService turnHandlerService) {
         this.turnHandlerService = turnHandlerService;
     }
 
     @GetMapping
     public ResponseEntity<List<Turn>> getAllTurns() {
+        log.info("Getting all turns"); // Logging example
         return ResponseEntity.ok(turnHandlerService.getAllTurns());
     }
 
