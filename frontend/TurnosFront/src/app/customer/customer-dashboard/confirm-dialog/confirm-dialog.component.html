@@ -1,4 +1,4 @@
-<div>
+<div class="confirm-dialog-content">
     <div>agendar turno</div>
     <div>resumen de Servicio</div>
     <div>Cliente</div>
@@ -13,7 +13,7 @@
     <div>{{formatFecha(data.turno.fecha)}}</div>
     <div>{{formatHora(data.turno.hora)}}</div>
     <div>
-        <button mat-button (click)="cerrarDialog()">Modificar</button>
-        <button mat-button color="primary" (click)="aceptarDialog()">Aceptar</button>
+        <button (click)="cerrarDialog()">Modificar</button>
+        <button (click)="aceptarDialog()">Aceptar</button>
     </div>
 </div>

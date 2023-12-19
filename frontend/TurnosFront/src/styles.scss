@@ -98,3 +98,16 @@ a{
   text-align: center;
 }
 
+.dialog-container{
+ 
+  border: solid 1px $img-border-color; 
+  background:$gold-light;
+}
+
+.mat-dialog-container {
+  .dialog-container {
+    background:$gold-light;
+    border: solid 1px $img-border-color;
+  }
+}
+

@@ -43,6 +43,7 @@ export class CustomerDashboardComponent {
       if(this.persistence.exist("user")){
           const dialogRef = this.dialog.open(ConfirmDialogComponent, {
           width: '400px',
+          panelClass: 'dialog-container',
           data:{
               user: this.persistence.get("user"),
               turno: this.turno
@@ -54,6 +55,7 @@ export class CustomerDashboardComponent {
               const thanks = this.dialog.open(
                 ThanksDialogComponent,
                 {
+                  panelClass: 'dialog-container',
                   width: '400px',
                   data:{}
                 }

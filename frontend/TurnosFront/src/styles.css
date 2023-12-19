@@ -87,3 +87,13 @@ a :hover {
 .center {
   text-align: center;
 }
+
+.dialog-container {
+  border: solid 1px #7B5F46;
+  background: #EFDFCF;
+}
+
+.mat-dialog-container .dialog-container {
+  background: #EFDFCF;
+  border: solid 1px #7B5F46;
+}

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.thanks-dialog-content {
+  text-align: center;
+  padding: 20px;
+  background-color: #EFDFCF;
+}
+
+.thanks-dialog-container {
+  background-color: #EFDFCF;
+  /* Ajusta el radio según tus preferencias */
+}
