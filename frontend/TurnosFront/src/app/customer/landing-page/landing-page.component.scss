@@ -3,3 +3,13 @@
 img{
     width: 100%;
 }
+
+.rounded-div{
+    background-color: $component-color;
+    border-radius: 15px;
+    text-align: center;
+    img{
+        max-width: 50%;
+    }
+}
+

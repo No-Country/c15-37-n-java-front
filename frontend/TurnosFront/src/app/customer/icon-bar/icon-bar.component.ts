@@ -2,17 +2,22 @@ import { Component } from '@angular/core';
 import { IconLink } from './icon-link';
 import { Collection } from 'src/app/shared/class/collection';
 
+
 const lnks = [
   {
-    icon: "twitter.jpg",
-    url: "http://www.twitter.com"
-  },
-  {
-    icon: "facebook.jpg",
+    icon: "youtube",
     url: "http://www.facebook.com"
   },
   {
-    icon: "instagram.jpg",
+    icon: "facebook-f",
+    url: "http://www.facebook.com"
+  },
+  {
+    icon: "twitter",
+    url: "http://www.twitter.com"
+  },
+  {
+    icon: "instagram",
     url: "http://www.instagram.com"
   }
 ];

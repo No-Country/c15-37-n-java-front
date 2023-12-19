@@ -1,0 +1,71 @@
+@import '../../../../variables.scss';
+
+/* calendar.component.scss */
+.calendar {
+  text-align: center;
+  background-color: $unselected-color;
+  box-shadow: $box-shadow;
+  border-radius: 10px;
+  padding: 2rem;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $unselected-color;
+    color: $gold-light;
+    padding: 10px;
+  }
+
+  .days-of-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+
+    .day-of-week {
+      text-align: center;
+      font-weight: bold;
+      color: $gold-light;
+    }
+  }
+
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+
+    .day {
+      padding: 10px;
+      border: none;
+      background-color: $unselected-color;
+      cursor: pointer;
+      border-radius: 50px;
+      color:$secondary-color;
+    }
+
+    .today {
+       border: 1px solid $gold-light;
+
+    }
+
+    .empty {
+        visibility: hidden;
+      }
+
+    .disabled ,
+      .disabled-sunday,
+      .disabled-other {
+        pointer-events: none;
+        opacity: 0.5;
+      }
+
+      .selected {
+        background-color: $secondary-color; // Cambia al color que prefieras
+        color: $unselected-color;
+        font-weight: bolder; // Cambia al color que prefieras
+      }
+
+  }
+}

@@ -1,20 +1,31 @@
+@import '../../../../variables.scss';
+
 .not-selected{
-    color: #000;
+    background-color: $unselected-color;
+    color: $main-color;
 }
 
 .selected{
-    background-color: #000;
-    color: aliceblue;
+    background-color: $secondary-color;
+    color: $background-color;
 }
 
 .horario-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px; /* Espaciado entre las horas */
+  gap: 20px; /* Espaciado entre las horas */
+}
+
+.hora-container{
+  padding-bottom: 15px;
 }
 
 .hora-item {
   padding: 10px;
-  border: 1px solid #ccc;
   cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: bolder;
+  box-shadow: $box-shadow;
+
 }

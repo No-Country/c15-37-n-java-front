@@ -38,6 +38,12 @@ export class TimeSelectorComponent {
     this.turno?.setValue("hora",horaSeleccionada);
   }
 
+  ngOnInit(): void {
+    if(this.turno?.getValue("hora")){
+      this.timeSelected= format(this.turno?.getValue("hora"), 'HH:mm')
+    }
+  }
+
 
   generarHorarios(horaInicio: Date): string[] {
     const horarios: string[] = [];

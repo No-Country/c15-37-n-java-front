@@ -1,3 +1,13 @@
 img {
   width: 100%;
 }
+
+.rounded-div {
+  background-color: #25282d;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.rounded-div img {
+  max-width: 50%;
+}

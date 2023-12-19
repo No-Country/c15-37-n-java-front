@@ -1,0 +1,67 @@
+/* calendar.component.scss */
+.calendar {
+  text-align: center;
+  background-color: #252B35;
+  box-shadow: 1px 20px 19px 8px #000000;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.calendar .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #252B35;
+  color: #EFDFCF;
+  padding: 10px;
+}
+
+.calendar .days-of-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.calendar .days-of-week .day-of-week {
+  text-align: center;
+  font-weight: bold;
+  color: #EFDFCF;
+}
+
+.calendar .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.calendar .days .day {
+  padding: 10px;
+  border: none;
+  background-color: #252B35;
+  cursor: pointer;
+  border-radius: 50px;
+  color: #d08f52;
+}
+
+.calendar .days .today {
+  border: 1px solid #EFDFCF;
+}
+
+.calendar .days .empty {
+  visibility: hidden;
+}
+
+.calendar .days .disabled,
+.calendar .days .disabled-sunday,
+.calendar .days .disabled-other {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.calendar .days .selected {
+  background-color: #d08f52;
+  color: #252B35;
+  font-weight: bolder;
+}

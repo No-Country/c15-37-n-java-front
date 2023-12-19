@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@500&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 * {
   margin: 0;
   padding: 0;
@@ -10,14 +11,14 @@
 }
 
 .contenedor {
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: flex;
   justify-content: center;
   background-color: #141923;
 }
 
-.button, .button-unfilled, .button-filled {
+.button, .button-no-border, .button-unfilled, .button-filled {
   text-transform: uppercase;
   margin: 10px;
   padding: 12px;
@@ -37,6 +38,16 @@
   border: 1px solid #d08f52;
 }
 
+.button-no-border {
+  background-color: #0b0f18;
+  color: #d08f52;
+  border: none;
+}
+
+.button-shadow {
+  box-shadow: 1px 20px 19px 8px #000000;
+}
+
 .imgrect, .img-rotate-right, .img-rotate-left {
   border-radius: 50px;
   border: 10px solid #7B5F46;
@@ -46,15 +57,19 @@
 }
 
 .img-rotate-left {
-  transform: rotate(-3.897deg);
+  transform: rotate(-1.897deg);
 }
 
 .img-rotate-right {
-  transform: rotate(3.897deg);
+  transform: rotate(1.897deg);
 }
 
 section {
   color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 section h2 {
@@ -69,7 +84,6 @@ a :hover {
   text-decoration: underline;
 }
 
-section {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.center {
+  text-align: center;
 }

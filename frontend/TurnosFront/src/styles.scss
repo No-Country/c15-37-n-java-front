@@ -3,6 +3,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@500&display=swap');
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
 @import 'variables.scss';
 
 * {
@@ -15,7 +17,7 @@
 }
 
 .contenedor {
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -44,6 +46,17 @@
   border: 1px solid $secondary-color;
 }
 
+.button-no-border{
+  @extend .button;
+  background-color: $background-color;
+  color:$secondary-color;
+  border: none;
+}
+
+.button-shadow{
+  box-shadow: $box-shadow;
+}
+
 .imgrect{
     border-radius: 50px;
     border: 10px solid $img-border-color;
@@ -64,6 +77,10 @@
 
 section{
   color: $main-color;
+  margin-left:20% ;
+  margin-right:20% ;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   h2{
     font-family: $title-font !important;
   }
@@ -77,7 +94,7 @@ a{
   }
 }
 
-section{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.center{
+  text-align: center;
 }
+

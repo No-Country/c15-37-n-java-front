@@ -1,21 +1,29 @@
 .not-selected {
-  color: #000;
+  background-color: #252B35;
+  color: white;
 }
 
 .selected {
-  background-color: #000;
-  color: aliceblue;
+  background-color: #d08f52;
+  color: #0b0f18;
 }
 
 .horario-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 20px;
   /* Espaciado entre las horas */
+}
+
+.hora-container {
+  padding-bottom: 15px;
 }
 
 .hora-item {
   padding: 10px;
-  border: 1px solid #ccc;
   cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: bolder;
+  box-shadow: 1px 20px 19px 8px #000000;
 }

@@ -1,8 +1,7 @@
-<p>Selecciona la hora</p>
 <div class="horario-grid">
-    <div *ngFor="let tm of timeSlots" class="hora-item" (click)="select(tm)">
-        <div *ngIf="isSelected(tm)" class="selected">{{tm}}</div>
-        <div *ngIf="!isSelected(tm)" class="not-selected">
+    <div *ngFor="let tm of timeSlots" class="hora-container" (click)="select(tm)">
+        <div *ngIf="isSelected(tm)" class="selected hora-item">{{tm}}</div>
+        <div *ngIf="!isSelected(tm)" class="not-selected hora-item">
             {{tm}}
         </div>
     </div>

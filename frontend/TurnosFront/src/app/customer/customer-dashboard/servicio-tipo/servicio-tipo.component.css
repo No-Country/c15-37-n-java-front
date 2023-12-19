@@ -1,12 +1,38 @@
-.service-type {
-  display: flex;
+.servicio-tipo-conenedor {
+  text-align: center;
+  min-width: 150px;
+  min-height: 150px;
+  max-width: 150px;
+  max-height: 150px;
   flex-direction: column;
+  justify-content: center;
   vertical-align: middle;
-  margin: auto;
+}
+
+.servicio-tipo-conenedor .imagen {
+  min-width: 120px;
+  min-height: 120px;
+  max-width: 120px;
+  max-height: 120px;
+  margin: 20px;
+  border: none;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  border-radius: 100%;
+}
+
+.servicio-tipo-conenedor img {
+  margin: 15px;
+}
+
+.servicio-tipo-conenedor p {
+  font-size: 1.2em;
+  color: #d08f52;
 }
 
 .unselected {
-  color: black;
+  background-color: #252B35;
+  box-shadow: 1px 20px 19px 8px #000000;
 }
 
 .selected {

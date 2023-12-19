@@ -1,1 +1,20 @@
-<mat-calendar [(selected)]="selectedDate" [minDate]="minDate" (selectedChange)="dateChanged($event)"></mat-calendar>
+<div class="calendar">
+    <div class="header">
+        <button class="button-unfilled" (click)="prevMonth()">Anterior</button>
+        <h2>{{ getMonthName(currentDate) }} {{ currentDate | date: 'y' }}</h2>
+        <button class="button-unfilled" (click)="nextMonth()">Siguiente</button>
+    </div>
+    <div class="days-of-week">
+        <div *ngFor="let day of weekDays" class="day-of-week">{{ day }}</div>
+    </div>
+    <div class="days">
+        <div *ngFor="let day of getDaysInMonth(currentDate)" class="day" [ngClass]="{'today': isToday(day),
+                 'empty': !day, 
+                 'disabled': (day === null || isBefore(day)), 
+                 'selected': isSameDay(day, selectedDay),
+                 'disabled-sunday': isSunday(day),
+                 'disabled-other': isOtherDisabledDay(day)}" (click)="handleDayClick(day)">
+            {{ day !== null ? (day | date: 'd') : '' }}
+        </div>
+    </div>
+</div>
