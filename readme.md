@@ -39,19 +39,19 @@ Lo podrás encontrar en Figma, en el siguiente link >>>>> ["Diseño de Barbería
 
 3. **Resumen de Servicio**
 
-<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703192744/Barber%C3%ADa%20Braz/lzd4axsidfx9krsfdke8.png" alt="Resumen" width="200"/>
+<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703192744/Barber%C3%ADa%20Braz/lzd4axsidfx9krsfdke8.png" alt="Resumen" width="375"/>
 
 4. **Registro**
 
-<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703192740/Barber%C3%ADa%20Braz/lgqfrzjrxyynqysxmeh4.png" alt="Resumen" width="200"/>
+<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703192740/Barber%C3%ADa%20Braz/lgqfrzjrxyynqysxmeh4.png" alt="Resumen" width="850"/>
 
 5. **Login**
 
-<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703192739/Barber%C3%ADa%20Braz/nlowvrpksxsrbzjtkfrz.png" alt="Resumen" width="200"/>
+<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703192739/Barber%C3%ADa%20Braz/nlowvrpksxsrbzjtkfrz.png" alt="Resumen" width="850"/>
 
 6. **Panel de Información**: En donde el cliente puede ver sus citas.
 
-<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703192740/Barber%C3%ADa%20Braz/ls5bokeegtwauwjufczz.png" alt="Resumen" width="200"/>
+<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703192740/Barber%C3%ADa%20Braz/ls5bokeegtwauwjufczz.png" alt="Resumen" width="500"/>
 
 <br>
 
@@ -59,11 +59,11 @@ Lo podrás encontrar en Figma, en el siguiente link >>>>> ["Diseño de Barbería
 
 1. **Panel de Control de Clientes**: El Administrador puede ver los clientes y su información.
 
-<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703192739/Barber%C3%ADa%20Braz/by6ed9jvtojfdhorfi0i.png" alt="Resumen" width="200"/>
+<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703192739/Barber%C3%ADa%20Braz/by6ed9jvtojfdhorfi0i.png" alt="Resumen" width="850"/>
 
 2. **Panel de Control de Turnos**: El Administrador puede ver los turnos y gestionarlos.
 
-<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703192739/Barber%C3%ADa%20Braz/qdkwxmfzvcr3fb3qfkgt.png" alt="Resumen" width="200"/>
+<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703192739/Barber%C3%ADa%20Braz/qdkwxmfzvcr3fb3qfkgt.png" alt="Resumen" width="850"/>
 
 
 ## Autores
