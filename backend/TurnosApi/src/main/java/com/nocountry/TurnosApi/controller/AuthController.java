@@ -18,7 +18,7 @@ import com.nocountry.TurnosApi.service.TokenService;
 @RestController
 @RequestMapping("/login")
 public class AuthController {
-    @Autowired(required = false)
+    @Autowired
     private AuthenticationManager authenticationManager;
 
     @Autowired
