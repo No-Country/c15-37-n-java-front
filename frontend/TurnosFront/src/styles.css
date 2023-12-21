@@ -10,8 +10,15 @@
   text-decoration: none;
 }
 
+body {
+  background-color: #373839;
+}
+
+.container {
+  padding: 0;
+}
+
 .contenedor {
-  width: 90%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -52,7 +59,7 @@
   border-radius: 50px;
   border: 10px solid #7B5F46;
   box-shadow: 2px 7px 16px 0px rgba(0, 0, 0, 0.25), 8px 28px 29px 0px rgba(0, 0, 0, 0.21), 18px 64px 40px 0px rgba(0, 0, 0, 0.13), 32px 113px 47px 0px rgba(0, 0, 0, 0.04), 50px 177px 51px 0px rgba(0, 0, 0, 0);
-  width: 75%;
+  width: 85%;
   margin: auto;
 }
 
@@ -60,20 +67,52 @@
   transform: rotate(-1.897deg);
 }
 
+.img-horizontal {
+  width: 70%;
+}
+
+.img-vertical {
+  width: 45% !important;
+}
+
 .img-rotate-right {
+  width: 65%;
   transform: rotate(1.897deg);
 }
 
-section {
-  color: white;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.row {
+  margin-bottom: 2.5rem;
 }
 
-section h2 {
+section {
+  color: #d08f52;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
+}
+
+section h2, section h3 {
+  color: white;
   font-family: "Hepta Slab", serif !important;
+  margin: auto !important;
+  text-align: center !important;
+  line-height: 1.5em !important;
+  text-transform: uppercase !important;
+}
+
+section h4 {
+  margin: auto !important;
+  text-align: center !important;
+  line-height: 1.5em !important;
+  text-transform: uppercase !important;
+}
+
+h2 {
+  font-size: 2.5rem !important;
+}
+
+h3 {
+  font-size: 1.5rem !important;
 }
 
 a {
@@ -96,4 +135,8 @@ a :hover {
 .mat-dialog-container .dialog-container {
   background: #EFDFCF;
   border: solid 1px #7B5F46;
+}
+
+.black {
+  background-color: #0b0f18;
 }

@@ -1,4 +1,4 @@
-<section>
+<section class="black">
     <div class="row">
         <div class="col">
             <h2>¿QUIÉRES
@@ -23,11 +23,12 @@
     <div class="row">
         <div class="col">
             <picture>
-                <img class="img-rotate-left" src="assets/images/4666119645b5a542716dd5b130a18e96.jpeg" alt="">
+                <img class="img-rotate-left img-horizontal" src="assets/images/4666119645b5a542716dd5b130a18e96.jpeg"
+                    alt="">
             </picture>
         </div>
         <div class="col">
-            <p>¿QUIÉN ME VA A ATENDER?</p>
+            <h4>¿QUIÉN ME VA A ATENDER?</h4>
             <h2 id="nosotros">ANTONY BRAZ</h2>
             <p>Líder indiscutible en el arte de la barbería, Antony Braz
                 fusiona la destreza clásica con la visión moderna. Su
@@ -40,9 +41,9 @@
 
 
 </section>
-<section>
-    <p>servicios</p>
-    <h3 id="servicio">LOS MEJORES SERVICIOS</h3>
+<section class="black">
+    <h4>servicios</h4>
+    <h2 id="servicio">LOS MEJORES SERVICIOS</h2>
     <div class="row">
         <div class="col">
             <div class="rounded-div">
@@ -107,11 +108,13 @@
             </div>
         </div>
     </div>
+</section>
+<section>
     <div class="row">
         <div class="col">
-            SIEM P RE UN
-            TURNO A TU
-            D IS P OSICI Ó N
+            <h2>SIEMPRE UN TURNO A TU
+                DISPOSICIÓN</h2>
+
             Nuestra barbería se enorgullece de ofrecer una experiencia de
             servicio al cliente sin complicaciones. La disponibilidad de turnos
             es fl exible y conveniente. P uedes reservar fácilmente a través de
@@ -123,43 +126,44 @@
             adapte a ti.
             <app-btn-turnos [texto]='textoTurnos' cssClass="button-unfilled"></app-btn-turnos>
         </div>
-        <div class="col">
+        <div class="col align-self-center">
             <picture>
-                <img class="img-rotate-right" src="assets/images/9e78b0a674cd1a1d322329d88157c461.jpeg" alt="">
+                <img class="img-rotate-right img-vertical" src="assets/images/9e78b0a674cd1a1d322329d88157c461.jpeg"
+                    alt="">
             </picture>
         </div>
     </div>
 
 </section>
-<section>
+<section class="black ">
     <div class="row">
         <div class="col">
             <picture>
                 <img class="" src="assets/images/52f1b72092a6c39d6c81f67d06a7771d.png" alt="">
             </picture>
         </div>
-        <div class="col">
-            A PÚ RATE !
-            A P R O VE CHÁ L A
-            P R O M OC I Ó N
-            Descuento
-            30%
-            C O N TU C ORTE , RE S ER V Á TU A RREG L O D E BA R BA
-            C O N D E SC UE N TO!
+        <div class="col promo">
+            <p class="hurriup">APÚRATE!</p>
+            <p class="aprovecha">APROVECHÁ LA PROMOCIÓN</p>
+            <p class="discount">Descuento 30%</p>
+            <p class="nota">CON TU CORTE , RESERVÁ TU ARREGLO DE BARBA
+                CONDESCUENTO!</p>
+
+
+
         </div>
     </div>
 </section>
 <section>
     <div class="row">
         <div class="col">
-            <h3 id="contacto">Contacto</h3>
+            <h2 id="contacto">Contacto</h2>
             Utiliza nuestro formulario de contacto en línea para
             consultas. Comunicación directa, registro detallado y
             servicios personalizados. ¡H az de tu experiencia algo
             impecable desde el primer clic en nuestra página w eb !
         </div>
         <div class="col">
-
             <app-contact-form></app-contact-form>
         </div>
     </div>
