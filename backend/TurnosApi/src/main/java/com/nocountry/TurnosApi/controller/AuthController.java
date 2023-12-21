@@ -1,6 +1,7 @@
 package com.nocountry.TurnosApi.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -16,9 +17,10 @@ import com.nocountry.TurnosApi.model.ClienteModel;
 import com.nocountry.TurnosApi.service.TokenService;
 
 @RestController
-@RequestMapping("/login")
+@RequestMapping("/clientes")
 public class AuthController {
-    @Autowired
+    @Autowired(required = false)
+    @Qualifier("authenticationManagerBean")
     private AuthenticationManager authenticationManager;
 
     @Autowired
