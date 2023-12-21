@@ -32,7 +32,7 @@ export class LoginComponent {
           nombre: "juan",
           apellido: "perez",
           email: this.loguinform.get("user")?.value,
-          admin: false
+          admin: true
         }
       ));
 

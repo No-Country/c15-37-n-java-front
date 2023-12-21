@@ -11,7 +11,7 @@ import { User } from './shared/class/user';
 })
 export class AppComponent {
   
-  title = 'TurnosFront';
+  title = 'Barbería Braz';
 
   constructor(private persistencia:PersistentService){
 

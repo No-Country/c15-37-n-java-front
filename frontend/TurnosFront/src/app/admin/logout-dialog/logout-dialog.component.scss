@@ -1,0 +1,15 @@
+@import '../../../variables.scss';
+
+.logout-admin{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+    text-align: center;
+    background-color: $background-color;
+    color:$main-color;
+
+    button{
+        text-align: center;
+    }
+}

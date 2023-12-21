@@ -27,12 +27,17 @@
 
         </thead>
         <tbody>
-            <tr>
+            <tr *ngFor="let turno of listaTurnos">
                 <td>valor</td>
-                <td>valor</td>
-                <td>valor</td>
-                <td>valor</td>
-                <td>valor</td>
+                <td>{{formatFecha(turno.fecha)}}</td>
+                <td>{{formatHora(turno.hora)}}</td>
+                <td>{{formatServices(turno.serviceList)}}</td>
+                <td>
+                    <button *ngIf="turno.estado" class="btn button-unfilled"
+                        (click)="cambiarEstado(turno)">Listo</button>
+                    <button *ngIf="!turno.estado" class="btn button-filled"
+                        (click)="cambiarEstado(turno)">Pendiente</button>
+                </td>
             </tr>
         </tbody>
     </table>

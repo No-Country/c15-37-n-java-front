@@ -24,6 +24,10 @@ export class Turno extends Model{
     this.setValue("hora",h);
   }
 
+  set estado(e:boolean){
+    this.setValue("estado",e)
+  }
+
   get corte():boolean{
     return this.getValue("corte");
   }
@@ -38,6 +42,10 @@ export class Turno extends Model{
 
   get peinado():boolean{
     return this.getValue("peinado");
+  }
+
+  get estado():boolean{
+    return this.getValue("estado");
   }
 
   get serviceList():any{

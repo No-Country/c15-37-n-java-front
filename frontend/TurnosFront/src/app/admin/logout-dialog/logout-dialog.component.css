@@ -1,0 +1,13 @@
+.logout-admin {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
+  text-align: center;
+  background-color: #0b0f18;
+  color: white;
+}
+
+.logout-admin button {
+  text-align: center;
+}

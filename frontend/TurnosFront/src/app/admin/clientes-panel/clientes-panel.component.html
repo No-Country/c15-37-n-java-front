@@ -22,10 +22,10 @@
 
         </thead>
         <tbody>
-            <tr>
-                <td>valor</td>
-                <td>valor</td>
-                <td>valor</td>
+            <tr *ngFor="let user of clientList">
+                <td>{{user.nombre}}</td>
+                <td>{{user.apellido}}</td>
+                <td>{{user.email}}</td>
             </tr>
         </tbody>
     </table>
