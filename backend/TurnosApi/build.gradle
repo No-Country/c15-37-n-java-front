@@ -2,6 +2,7 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.2.0'
 	id 'io.spring.dependency-management' version '1.1.4'
+	id 'application'
 }
 
 group = 'com.nocountry'
@@ -22,9 +23,12 @@ repositories {
 }
 
 dependencies {
+	implementation 'com.auth0:java-jwt:4.4.0'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'jakarta.validation:jakarta.validation-api:3.0.2'
     implementation 'org.springframework.boot:spring-boot-starter-actuator' // Solo para conocer el estado de la app
 																		   // Reminder: /health, /metrics, /info, /env
 	compileOnly 'org.projectlombok:lombok'
@@ -33,8 +37,14 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.security:spring-security-test'
+
 }
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+
+bootJar {
+    launchScript()
 }
