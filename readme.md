@@ -1,5 +1,5 @@
 
-# c15-37-n-java-front:Barbería Braz
+# c15-37-n-java-front: Barbería Braz
 <p align="center">
   <img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703190657/Barber%C3%ADa%20Braz/hmc6vwnjajy3vsspagbi.png" alt="Logo">
 </p>
@@ -10,7 +10,7 @@
 
 <br>
 
-## Deploy
+## Despliegue de la aplicación
 
 Acá el link de dónde ver el proyecto en vivo! >>>>> ["Barbería Braz en Microsoft Azure"](https://barberiabraz.azurewebsites.net/)
 
@@ -29,31 +29,30 @@ Lo podrás encontrar en Figma, en el siguiente link >>>>> ["Diseño de Barbería
 
 #### Para Clientes de la Barbería
 
-1. **Web Page**: Navegación intuitiva y limpia, con responsividad para móviles, escritorio, y tablets igual.
+1. **Página Web**: Navegación intuitiva y limpia, con responsividad para móviles, escritorio, y tablets igual.
 
-![Webpage1](https://res.cloudinary.com/delt28sa5/image/upload/v1703193296/Barber%C3%ADa%20Braz/cgtezmkag7jpimf5jp5o.gif)
+<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703193296/Barber%C3%ADa%20Braz/cgtezmkag7jpimf5jp5o.gif" alt="Webpage" width="850"/>
 
 2. **Elección de Servicios**: En donde podrán ver cuál es la oferta, y en que fechas y horarios pueden agendar el/los servicios.
 
-![Agenda](https://res.cloudinary.com/delt28sa5/image/upload/v1703193294/Barber%C3%ADa%20Braz/xc1elaloc6dgigixqlti.gif)
+<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703193294/Barber%C3%ADa%20Braz/xc1elaloc6dgigixqlti.gif" alt="Agenda" width="850"/>
 
 3. **Resumen de Servicio**
 
-<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703192744/Barber%C3%ADa%20Braz/lzd4axsidfx9krsfdke8.png" alt="Resumen" width="375"/>
+<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703196479/Barber%C3%ADa%20Braz/tbtjd2qi2ckzqbn8cmnq.png" alt="Resumen" width="675"/>
 
 4. **Registro**
 
 <img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703192740/Barber%C3%ADa%20Braz/lgqfrzjrxyynqysxmeh4.png" alt="Resumen" width="850"/>
 
-5. **Login**
+5. **Inicio de Sesión**
 
 <img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703192739/Barber%C3%ADa%20Braz/nlowvrpksxsrbzjtkfrz.png" alt="Resumen" width="850"/>
 
 6. **Panel de Información**: En donde el cliente puede ver sus citas.
 
-<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703192740/Barber%C3%ADa%20Braz/ls5bokeegtwauwjufczz.png" alt="Resumen" width="500"/>
+<img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703196479/Barber%C3%ADa%20Braz/glyamxtfv9bjc9xcjeok.png" alt="Resumen" width="850"/>
 
-<br>
 
 #### Para Administradores
 
