@@ -5,6 +5,10 @@
   background-color: #EFDFCF;
 }
 
+.thanks-dialog-content .button-filled {
+  margin: auto;
+}
+
 .thanks-dialog-container {
   background-color: #EFDFCF;
   /* Ajusta el radio según tus preferencias */

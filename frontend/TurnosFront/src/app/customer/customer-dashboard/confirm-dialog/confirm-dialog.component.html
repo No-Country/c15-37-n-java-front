@@ -1,19 +1,19 @@
 <div class="confirm-dialog-content">
-    <div>agendar turno</div>
-    <div>resumen de Servicio</div>
-    <div>Cliente</div>
-    <div>{{ data.user.nombre }} {{data.user.apellido}}</div>
-    <div>Servicio elegido</div>
+    <h4>agendar turno</h4>
+    <h3>resumen de Servicio</h3>
+    <h4>Cliente</h4>
+    <h2>{{ data.user.nombre }} {{data.user.apellido}}</h2>
+    <h3>Servicio elegido</h3>
     <div>
         <div *ngFor="let s of data.turno.serviceList">
             {{s}}
         </div>
     </div>
-    <div>FECHA ELEGIDA</div>
+    <h3>FECHA ELEGIDA</h3>
     <div>{{formatFecha(data.turno.fecha)}}</div>
     <div>{{formatHora(data.turno.hora)}}</div>
-    <div>
-        <button (click)="cerrarDialog()">Modificar</button>
-        <button (click)="aceptarDialog()">Aceptar</button>
+    <div class="row">
+        <div class="col"><button class="button-unfilled" (click)="cerrarDialog()">Modificar</button></div>
+        <div class="col"> <button class="button-filled" (click)="aceptarDialog()">Aceptar</button></div>
     </div>
 </div>

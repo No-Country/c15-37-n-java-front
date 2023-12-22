@@ -1,36 +1,38 @@
-<button class="btn" (click)="cerrarDialog()">Volver</button>
-<div>
-    <div>
-        <h3>{{data.user.nombre}} {{data.user.apellido}}</h3>
-        <p>{{data.user.email}}</p>
+<div class="cont-message">
+    <button class="btn" (click)="cerrarDialog()">X</button>
+    <div class="row">
+        <div class="col">
+            <h3>{{data.user.nombre}} {{data.user.apellido}}</h3>
+            <p>{{data.user.email}}</p>
 
+        </div>
+        <div class="col">
+            <button class="button-unfilled" (click)="cerrarSesion()">cerrar Sesion</button>
+        </div>
     </div>
-    <div>
-        <button class="btn" (click)="cerrarSesion()">cerrar Sesion</button>
-    </div>
+
+    <p>Mis turnos pendientes</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Servicio</th>
+                <th>Acciones</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let t of data.user.turnos">
+                <td>{{formatFecha(t.fecha)}}</td>
+                <td>{{formatHora(t.hora)}}</td>
+                <td>{{formatServices(t.serviceList)}}</td>
+                <td>
+                    <button class="button-filled" (click)="borrar(t)">Borrar</button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
 </div>
-
-<p>Mis turnos pendientes</p>
-
-<table>
-    <thead>
-        <tr>
-            <th>Fecha</th>
-            <th>Hora</th>
-            <th>Servicio</th>
-            <th>Acciones</th>
-        </tr>
-
-    </thead>
-    <tbody>
-        <tr *ngFor="let t of data.user.turnos">
-            <td>{{formatFecha(t.fecha)}}</td>
-            <td>{{formatHora(t.hora)}}</td>
-            <td>{{formatServices(t.serviceList)}}</td>
-            <td>
-                <button class="btn" (click)="borrar(t)">Borrar</button>
-            </td>
-        </tr>
-
-    </tbody>
-</table>
