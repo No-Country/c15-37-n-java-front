@@ -88,10 +88,10 @@ Lo podrás encontrar en Figma, en el siguiente link >>>>> ["Diseño de Barbería
 
 #### 🎨🖌️ Front End
 
-| <img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703194566/Pics/fj8mtkqfr50gfcn37why.jpg" width="100"> | <img src="" width="100"> |
+| <img src="https://res.cloudinary.com/delt28sa5/image/upload/v1703194566/Pics/fj8mtkqfr50gfcn37why.jpg" width="100"> | <img src="https://media.licdn.com/dms/image/D4E03AQGEtvCUWZEXFg/profile-displayphoto-shrink_400_400/0/1699042815167?e=2147483647&v=beta&t=1cjVXkU8QepJWPxxO1Tz31oEzvA5L8Pr6VV4TDqHz1c" width="100"> |
 |:---:|:---:|
 | **Daniel Refchke** | **Ángel Rangel** |
-| [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/danielrefchke) [![LinkedIn](https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielrefchke/) | [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]() [![LinkedIn](https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)]() |
+| [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/danielrefchke) [![LinkedIn](https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielrefchke/) | [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]() [![LinkedIn](https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/angel-rangel-12604629a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) |
 
 
 <br>
