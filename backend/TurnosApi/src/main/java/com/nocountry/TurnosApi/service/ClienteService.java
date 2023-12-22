@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
@@ -46,7 +47,7 @@ public class ClienteService {
      *              correo electrónico de un cliente.
      * @return El método devuelve un objeto opcional que contiene un ClienteModel.
      */
-    public UserDetails byEmail(String email) {
+    public Optional<User> byEmail(String email) {
         return clienteRepository.findByEmail(email);
     }
 

@@ -16,6 +16,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 */
 import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,6 +28,8 @@ import lombok.NoArgsConstructor;
  * nombre, correo electrónico, contraseña y estado de administrador.
  */
 @Getter
+@Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "cliente")
@@ -54,11 +58,6 @@ public class ClienteModel implements UserDetails{
     @Override
     public String getUsername() {
         return email;
-    }
-
-    @Override
-    public String getPassword() {
-        return password;
     }
 
     @Override
